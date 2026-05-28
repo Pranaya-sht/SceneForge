@@ -1,0 +1,68 @@
+# Python cache and env
+__pycache__/
+*.py[cod]
+*.pyo
+.python-version
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs and runtime artifacts
+*.log
+logs/
+tmp/
+temp/
+*.tmp
+*.pid
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Model and ML artifacts
+*.ckpt
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.onnx
+*.h5
+*.npz
+*.npy
+
+# Generated media (keep source scripts, ignore rendered assets)
+outputs/
+**/outputs/
+**/rendered/
+**/exports/
+**/generated/
+**/cache/
+
+# Audio/video/image exports
+*.mp4
+*.mov
+*.mkv
+*.avi
+*.webm
+*.wav
+*.mp3
+*.flac
+*.m4a
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.gif
+
+# Local secrets/config
+.env
+.env.*
+*.secret
+*.key
+credentials*.json
+
