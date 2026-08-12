@@ -227,5 +227,5 @@ Distributed under the **MIT License**. See `LICENSE` for details.
 ### Author / Contact
 * **Developer:** Open for Machine Learning, AI Engineering, and Automation Pipeline roles.
 * **GitHub:** [@your-username]([https://github.com/](https://github.com/Pranaya-sht))
-* **LinkedIn:** [Your Name]([https://linkedin.com/in/your-profile](https://www.linkedin.com/in/pranaya-shrestha-921210398/))
-* **Email:** `your.email@example.com`
+* **LinkedIn:** [Your Name]((https://www.linkedin.com/in/pranaya-shrestha-921210398/))
+* **Email:** `pranayashrestha8888@gmail.com`
