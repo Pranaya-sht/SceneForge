@@ -15,17 +15,16 @@ This pipeline orchestrates multi-agent LLM script expansion (**Google Gemini API
 
 ---
 
-## 🚀 Key Features & Engineering Highlights
+##  Key Features & Engineering Highlights
 
-*   **🤖 Multi-LLM Agentic Scripting:** Leverages **Gemini 1.5/2.0** for macro-scene breakdown and **Local Ollama (Qwen 2.5 Uncensored)** for granular beat expansion, character consistency prompts, and scene-by-scene timing metadata.
-*   **🎙️ Asynchronous Microservice TTS:** Built custom `FastAPI` service wrapper around `edge-tts` featuring concurrent audio generation and automated speech duration profiling.
-*   **🖼️ Hybrid Rendering Engine (Local & Cloud Distributed):**
-    *   **Local:** Integrates seamlessly with **ComfyUI API** for local Diffusion generation.
+*   ** Multi-LLM Agentic Scripting:** Leverages **Gemini 1.5/2.0** for macro-scene breakdown and **Local Ollama (Qwen 2.5 Uncensored)** for granular beat expansion, character consistency prompts, and scene-by-scene timing metadata.
+*   ** Asynchronous Microservice TTS:** Built custom `FastAPI` service wrapper around `edge-tts` featuring concurrent audio generation and automated speech duration profiling.
+*   **Hybrid Rendering Engine (Local & Cloud Distributed):**
     *   **Cloud GPU Workers:** Features distributed Google Colab/Kaggle rendering nodes utilizing state-of-the-art **Wan 2.1** and **LTX-2** video models with lock-based state synchronization via Google Drive.
-*   **⚡ Dynamic Audio-Visual Syncing:** Eliminates frame drift and static freezes. Calculates dynamic zoom/pan frame counts (`d = tts_duration * fps`) on-the-fly for exact audio-visual alignment.
-*   **🛡️ Automated Corruption Guard (`ffprobe` Validation):** Built-in fault tolerance inspects generated MP4 streams via `ffprobe` immediately post-creation. Corrupted or truncated segments trigger immediate fallback and auto-re-rendering loops.
-*   **🧵 Multi-Threaded FFmpeg Editing:** Utilizes Python `ThreadPoolExecutor` capped at optimal worker limits to perform Ken Burns pan-zoom motion FX and multi-track audio stitching without CPU/disk throttling.
-*   **🔄 Orchestration via n8n & Docker:** Pre-configured Docker Compose stack with n8n workflows for trigger-based, no-code/low-code operational pipelines.
+*   ** Dynamic Audio-Visual Syncing:** Eliminates frame drift and static freezes. Calculates dynamic zoom/pan frame counts (`d = tts_duration * fps`) on-the-fly for exact audio-visual alignment.
+*   ** Automated Corruption Guard (`ffprobe` Validation):** Built-in fault tolerance inspects generated MP4 streams via `ffprobe` immediately post-creation. Corrupted or truncated segments trigger immediate fallback and auto-re-rendering loops.
+*   ** Multi-Threaded FFmpeg Editing:** Utilizes Python `ThreadPoolExecutor` capped at optimal worker limits to perform Ken Burns pan-zoom motion FX and multi-track audio stitching without CPU/disk throttling.
+*   ** Orchestration via n8n & Docker:** Pre-configured Docker Compose stack with n8n workflows for trigger-based, no-code/low-code operational pipelines.
 
 ---
 
@@ -67,7 +66,7 @@ This pipeline orchestrates multi-agent LLM script expansion (**Google Gemini API
 
 ---
 
-## 🛠️ Tech Stack & Dependencies
+##  Tech Stack & Dependencies
 
 *   **Core Backend:** Python 3.10+, FastAPI, Uvicorn
 *   **LLM Orchestration:** Google Gemini API, Ollama (`qwen2.5-abliterate:7b`, `Qwen2.5-Coder-7B-Instruct`)
@@ -78,7 +77,7 @@ This pipeline orchestrates multi-agent LLM script expansion (**Google Gemini API
 
 ---
 
-## ⚙️ Installation & Environment Setup
+##  Installation & Environment Setup
 
 ### 1. Prerequisites
 Ensure the following tools are installed on your environment:
@@ -122,7 +121,7 @@ TTS_SERVER_URL=http://127.0.0.1:8765
 
 ---
 
-## 🚀 Execution Guide
+##  Execution Guide
 
 ### Phase 1: Launch the Asynchronous TTS Microservice
 Start the lightweight FastAPI TTS server in an independent shell:
@@ -157,7 +156,7 @@ python local_pipeline.py --script story_80scenes.json
 
 ---
 
-## ☁️ Distributed Cloud GPU Worker Setup (Wan 2.1 / LTX-2)
+##  Distributed Cloud GPU Worker Setup (Wan 2.1 / LTX-2)
 
 For heavy computational video models like **Wan 2.1** or **LTX-2**, offload visual generation to free/paid Cloud GPUs (Google Colab / Kaggle):
 
@@ -174,7 +173,7 @@ For heavy computational video models like **Wan 2.1** or **LTX-2**, offload visu
 
 ---
 
-## 🤖 Visual Automation Setup (n8n Integration)
+##  Visual Automation Setup (n8n Integration)
 
 To manage execution workflows visually using n8n:
 
@@ -188,7 +187,7 @@ docker-compose up -d
 
 ---
 
-## 📂 Directory Layout
+##  Directory Layout
 
 ```text
 .
@@ -209,7 +208,7 @@ docker-compose up -d
 
 ---
 
-## 💡 Engineering & Performance Highlights
+##  Engineering & Performance Highlights
 
 * **Parallel Execution Efficiency:** Leverages Python's `asyncio` and `concurrent.futures.ThreadPoolExecutor` to perform concurrent API requests and video frame rendering, reducing pipeline bottleneck time by up to **65%**.
 * **Zero-Downtime Reliability:** Implemented health checks post-render to ensure corrupted video streams are identified prior to concatenation, preventing broken final renders.
@@ -217,7 +216,7 @@ docker-compose up -d
 
 ---
 
-## 🤝 Contributing & License
+##  Contributing & License
 
 Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](../../issues).
 
@@ -225,8 +224,8 @@ Distributed under the **MIT License**. See `LICENSE` for details.
 
 ---
 
-### 📬 Author / Contact
+### Author / Contact
 * **Developer:** Open for Machine Learning, AI Engineering, and Automation Pipeline roles.
-* **GitHub:** [@your-username](https://github.com/your-username)
-* **LinkedIn:** [Your Name](https://linkedin.com/in/your-profile)
+* **GitHub:** [@your-username]([https://github.com/](https://github.com/Pranaya-sht))
+* **LinkedIn:** [Your Name]([https://linkedin.com/in/your-profile](https://www.linkedin.com/in/pranaya-shrestha-921210398/))
 * **Email:** `your.email@example.com`
